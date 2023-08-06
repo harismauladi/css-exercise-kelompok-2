@@ -11,14 +11,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-main > p {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   text-align: center;
 }
+
+main > p,
+header,
+.item {
+  text-align: center;
+}
+
 .menu {
   width: 100%;
   padding: 20px;
@@ -29,6 +32,9 @@ main > p {
 .menu_item {
   display: flex;
 }
+main {
+  padding: 5px;
+}
 
 main > h3 {
   text-align: center;
@@ -36,13 +42,11 @@ main > h3 {
 }
 
 .item {
-  width: 50%;
   margin-top: 5px;
-  text-align: center;
   padding: 5px;
 }
 .item > h5 {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 .item > p {
   margin-top: 10px;
@@ -51,4 +55,10 @@ main > h3 {
 footer {
   display: flex;
   padding: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu_item {
+    flex-wrap: wrap;
+  }
 }
